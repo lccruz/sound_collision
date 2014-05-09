@@ -9,7 +9,7 @@ pygame.init()
 
 flags = DOUBLEBUF
 screen = pygame.display.set_mode((600, 600),flags)
-pygame.display.set_caption("Sounds")
+pygame.display.set_caption("Sound Collision")
 background = pygame.Surface(screen.get_size())
 background = background.convert()
 background.fill((0,0,0))
