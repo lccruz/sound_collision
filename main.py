@@ -8,15 +8,15 @@ from Quadrado import *
 pygame.init()
 
 flags = DOUBLEBUF
-screen = pygame.display.set_mode((600, 600),flags)
+screen = pygame.display.set_mode((600, 600), flags)
 pygame.display.set_caption("Sound Collision")
 background = pygame.Surface(screen.get_size())
 background = background.convert()
-background.fill((0,0,0))
+background.fill((0, 0, 0))
 
-#cria os quadrados
+# Cria os quadrados
 quadrados_group = pygame.sprite.Group()
-for i in range(0,10):
+for i in range(0, 10):
     quadrado = Quadrados()
     quadrados_group.add(quadrado)
 
@@ -25,8 +25,8 @@ count = 0
 keepGoing = True
 while keepGoing:
     clock.tick(30)
-    background.fill((0,0,0))
-    circulo = pygame.draw.circle(background, (255,255,255), (300, 300), 100)
+    background.fill((0, 0, 0))
+    circulo = pygame.draw.circle(background, (255, 255, 255), (300, 300), 100)
 
     if count == 10:
         quadrado = Quadrados()
